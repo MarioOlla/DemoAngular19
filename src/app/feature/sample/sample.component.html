@@ -1,18 +1,18 @@
 <div style="display: flex; flex-direction: column; max-width: 16rem;">
 
-    // text interpolation
+    <!-- text interpolation -->
     <h3>Ciao {{nome}}</h3>           
     <label for="nome">Cambia qui il tuo nome</label>
 
-    // two way binding
+    <!-- two way binding -->
     <input id="nome"  [(ngModel)]="nome">
 
-    // event binding
+    <!-- event binding -->
     <button (click)="stampaNome()">Stampa nome</button>
 </div>
 
-//property binding
-<app-child [cognome]="cognome" (cognomeEmitter)="riassegna($event)"/> //questo tag rappresenta il componente figlio 
+<!--property binding -->
+<app-child [cognome]="cognome" (cognomeEmitter)="riassegna($event)"/> <!--questo tag rappresenta il componente figlio  -->
 
-//[cognome] è l'input del componente figlio
-//(cognomeEmitter) è l'output del componente figlio
+<!--[cognome] è l'input del componente figlio -->
+<!--(cognomeEmitter) è l'output del componente figlio -->
