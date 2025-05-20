@@ -1,0 +1,12 @@
+<div class="custom-container" style="padding-top: 6rem;">
+    <h3>Totale: {{totale}}</h3>
+</div>
+<div class="custom-container">
+    <label for="operando">Operando</label>
+    <input type="number" [(ngModel)]="operando" id="operando">
+</div>
+<button class="custom-button" (click)="add()">+</button>
+<button class="custom-button" (click)="subtract()">-</button>
+<button class="custom-button" (click)="multiply()">x</button>
+<button class="custom-button" (click)="divide()">/</button>
+<button class="custom-button" (click)="clear()">C</button>

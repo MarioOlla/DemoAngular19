@@ -9,7 +9,7 @@ import { ChildComponent } from '../child/child.component';
   templateUrl: './sample.component.html',
   styleUrl: './sample.component.scss'
 })
-export class SampleComponent implements OnInit, AfterViewInit, OnDestroy{
+export class SampleComponent implements OnInit, AfterViewInit{
 
   //proprietà del componente
   nome!:string;
@@ -27,9 +27,11 @@ export class SampleComponent implements OnInit, AfterViewInit, OnDestroy{
   ngAfterViewInit(): void {
     console.log("Render del componente terminato!")
   }
+  /*
   ngOnDestroy(): void {
     throw new Error('Componente distrutto!');
   }
+    */
 
   stampaNome(){
     console.log(`Il nome da te scelto è ${this.nome} ${this.cognome}!`);
